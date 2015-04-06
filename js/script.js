@@ -749,10 +749,15 @@ function hasScrolled() {
         // Scroll Down
         $('.header-top').removeClass('header-down').addClass('header-up');
         $('.navbar').addClass('navbar-up');
+        $('.social-top li').addClass('border-blanco');
+        $('.search-top li').addClass('search-up');
+
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('.header-top').removeClass('header-up').addClass('header-down');
+            $('.social-top li').removeClass('border-blanco');
+         	$('.search-top li').removeClass('search-up');
         }
     }
     

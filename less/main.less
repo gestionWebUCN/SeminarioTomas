@@ -1,11 +1,18 @@
 @red: #d13d30;
 @green: #66A590;
 @yellow: #f2ca0d;
-@gray: #393337;
+@gray: #31363c;
 @white: #fff;
 @black: #333;
 @text: #666;
 
+/*+====================================================+
+    GENERAL
++====================================================+*/
+body {
+    background-color: #fff;
+    text-rendering: optimizelegibility;
+}
 /*+====================================================+
     ICONS
 +====================================================+*/
@@ -32,7 +39,7 @@
     }
 }
 /*+====================================================+
-    HEADER TOP
+    HEADER - NAV
 +====================================================+*/
 header {
     position: fixed;
@@ -40,19 +47,88 @@ header {
     right: 0px;
     left: 0px;
     z-index: 1030;
+    background-color: @white; 
+    .header-top {
+        background-color: @gray;
+        height: 30px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        top: 0;
+        display: block;
+        .header-top-left {
+            ul.social-top {
+                list-style: outside none none;
+                padding-left: 0px;
+                li {
+                    display: inline-block;
+                    border-right: 1px solid #42474c;  
+                    opacity: 1;
+                    top:0;
+                    height: 30px;
+                    transition: all 0.6s ease;
+                    &.border-blanco {
+                        border-right: 1px solid #31363c;
+                        opacity: 0;  
+                        top: -30px;
+                        height: 0;
+                    }
+                    a {
+                        padding: 5px 12px;
+                        display: block;
+                        font-size: 14px;
+                        color: #c0c0c0;
+                        &:hover {
+                            color: @red;
+                        }
+                    }
+                }
+            }
+        }
+        .header-top-right {
+            float: right;
 
-}
-.header-top {
-    background-color: @gray;
-    height: 30px;
-    position: relative;
-    transition: all 0.2s ease-in-out;
-    top: 0;
-}
-.header-up {
-    top: -30px;
-    height: 0;
-}
-.navbar-up {
-    top:0px;
+            ul.search-top {
+                list-style: outside none none;
+                padding-left: 0px;
+                position: relative;
+                li {
+                    display: inline-block;
+                    transition: all 0.6s ease;
+                    opacity: 1;
+                    position: relative;
+                    top:0;
+                     &.search-up {
+                        opacity: 0; 
+                        top: -30px;
+                    }
+                    a {
+                        background-color: @red;
+                        padding: 5px 12px;
+                        display: block;
+                        font-size: 14px;
+                        color: #fff;
+                        &:hover {
+                            color: @red;
+                            background-color: @white;
+                            text-decoration: none !important;
+                        }
+                    }
+                }
+            }
+        }
+        .header-top-left, .header-top-right {
+            display: inline-block;
+        }
+    }
+
+    .header-up {
+        top: -30px;
+        height: 0;
+
+    }
+    .navbar-up {
+        top:0px;
+    }
+
+
 }

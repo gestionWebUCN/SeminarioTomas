@@ -141,15 +141,16 @@ website:    http://www.themepunch.com
 }
 
 .navbar-nav {
-    .transition;
+    
+   
     > li > a {
         color: @color2 !important;
-        font-size: 12px;
+        font-size: 13px;
         font-family: @font;
         font-weight: 500;
         text-transform: uppercase;
         .transition;
-        padding: 25px 8px;
+        padding: 44px 8px;
     }
     > li > a:hover,
     > li > a.active {
@@ -307,7 +308,6 @@ header.active {
     .navbar-nav {
         > li > a {
             color: @color2 !important;
-            padding: 25px 8px;
         }
         a.open-search {
             padding: 8px 15px 25px;
@@ -381,8 +381,8 @@ header.black-style {
                     .anchor;
                     display: block;
                     color: @color2;
-                    font-size: 12px;
-                    padding: 15px 16px;
+                    font-size: 14px;
+                    padding: 10px 16px;
                     text-transform: uppercase;
                     font-family: @font;
                     font-weight: 400;
@@ -466,11 +466,12 @@ ul.drop-down {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 200px;
+    width: 300px;
     background: @skin-color;
     padding: 4px;
     visibility: hidden;
     opacity: 0;
+    z-index: 200;
     .rotateX(-90deg);
     .transition;
     input[type="search"] {

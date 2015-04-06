@@ -1,0 +1,47 @@
+/*+====================================================+
+    ICONS
++====================================================+*/
+.iconleft {
+  margin-right: 14px;
+}
+.iconright {
+  margin-left: 14px;
+}
+.btn .iconleft {
+  margin-right: 14px;
+}
+.btn .iconright {
+  margin-right: 14px;
+}
+.btn-sm .iconleft,
+.btn-xs .iconleft {
+  margin-right: 6px;
+}
+.btn-sm .iconright,
+.btn-xs .iconright {
+  margin-right: 6px;
+}
+/*+====================================================+
+    HEADER TOP
++====================================================+*/
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+}
+.header-top {
+  background-color: #393337;
+  height: 30px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  top: 0;
+}
+.header-up {
+  top: -30px;
+  height: 0;
+}
+.navbar-up {
+  top: 0px;
+}

@@ -1,4 +1,3 @@
-
 /*-------------------------------------------------
  =  Table of Css
 
@@ -102,6 +101,208 @@ website:    http://www.themepunch.com
   padding: 0;
 }
 /*-------------------------------------------------*/
+/* =  import variables.less file
+/*-------------------------------------------------*/
+/* the default font in our template*/
+/* default color skin */
+/* default color skin with opacity */
+/* text color 1 (some titles)*/
+/* text color 2 (some text paragraphcs)*/
+/* white color*/
+/* black color*/
+/* ul reset margin and padding*/
+.ul-reset {
+  margin: 0;
+  padding: 0;
+}
+/* default style for paragraphs in this template*/
+.paragraph {
+  font-size: 13px;
+  color: #999999;
+  font-family: '', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+/* default style for anchors in this template*/
+.anchor {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+/* default style for hading1 in this template*/
+.heading1 {
+  color: #222222;
+  font-size: 30px;
+  font-family: '', sans-serif;
+  font-weight: 900;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+/* default style for hading2 in this template*/
+.heading2 {
+  color: #222222;
+  font-size: 15px;
+  font-family: '', sans-serif;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+/* variable for radius corners*/
+/* variable for radius corners*/
+/* variable for radius corners*/
+/* variable for radius corners*/
+/* variable for radius corners*/
+/* variable for transitions*/
+.transition {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+/* variable for transitions*/
+.transition2 {
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+/* variable for transitions*/
+.transition3 {
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+/* variable for tranform grow elem scale*/
+/* no shadow  variable*/
+.no-shadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+/* box shadow  variable*/
+/* animation duration  variable*/
+.animation-hover {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: hovertrans;
+  -moz-animation-name: hovertrans;
+  -ms-animation-name: hovertrans;
+  -o-animation-name: hovertrans;
+  animation-name: hovertrans;
+}
+/* animate transform variable*/
+@-webkit-keyframes hovertrans {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  50% {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@-moz-keyframes hovertrans {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  50% {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@-o-keyframes hovertrans {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  50% {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@keyframes hovertrans {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  50% {
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+/* animate transform rotate variable*/
+/* animate transform rotate x variable*/
+/* animate transform rotate Y variable*/
+/* animate transform rotate Y variable*/
+.trans-origin {
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+/* background size cover*/
+.back-cover {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+/*-------------------------------------------------*/
 /* =  Header
 /*-------------------------------------------------*/
 .navbar-default {
@@ -125,7 +326,7 @@ website:    http://www.themepunch.com
   -o-transition: all 0.2s ease-in-out;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -146,15 +347,15 @@ website:    http://www.themepunch.com
 }
 .navbar-nav > li > a {
   color: #999999 !important;
-  font-size: 13px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-size: 12px;
+  font-family: '', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  padding: 25px 15px;
+  padding: 25px 8px;
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.active {
@@ -213,7 +414,7 @@ website:    http://www.themepunch.com
   border: 1px solid #f3f3f3;
   color: #222222;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -237,7 +438,7 @@ website:    http://www.themepunch.com
 .navbar-nav li.shopping-cart .shopping-cart-drop ul li h2 {
   color: #222222;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0 0 4px;
   padding-top: 8px;
   font-weight: 400;
@@ -259,7 +460,7 @@ website:    http://www.themepunch.com
   display: inline-block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0;
 }
 .navbar-nav li.shopping-cart .shopping-cart-drop .check-box-cont {
@@ -272,7 +473,7 @@ website:    http://www.themepunch.com
   display: inline-block;
   color: #f27935;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0;
   padding: 5px 0;
@@ -287,7 +488,7 @@ website:    http://www.themepunch.com
   float: right;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   background: #f0f0f0;
   border: 1px solid #cccccc;
@@ -326,7 +527,7 @@ header.active .navbar-brand {
 }
 header.active .navbar-nav > li > a {
   color: #999999 !important;
-  padding: 25px 15px;
+  padding: 25px 8px;
 }
 header.active .navbar-nav a.open-search {
   padding: 8px 15px 25px;
@@ -413,7 +614,7 @@ header.black-style .navbar-nav > li > a.active {
   font-size: 12px;
   padding: 15px 16px;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   margin: 0;
   border-bottom: 1px solid #f3f3f3;
@@ -435,7 +636,7 @@ header.black-style .navbar-nav > li > a.active {
 .megadrop-down .dropdown h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 12px;
@@ -480,7 +681,7 @@ ul.drop-down li a {
   display: block;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
@@ -512,7 +713,7 @@ ul.drop-down li a:hover {
 .form-search input[type="search"] {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -559,7 +760,7 @@ ul.drop-down li a:hover {
 p {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -579,7 +780,7 @@ p {
 .title-section h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -619,7 +820,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0px;
   border-width: 0px;
   border-style: none;
@@ -644,7 +845,7 @@ p {
   font-size: 48px;
   line-height: 50px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   background-color: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -665,7 +866,7 @@ p {
   background: transparent;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid #ffffff;
   -webkit-border-radius: 2px;
@@ -681,7 +882,7 @@ p {
 #home-section .tp-caption a.trans-btn2 {
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid transparent;
   -webkit-border-radius: 2px;
@@ -715,7 +916,7 @@ p {
 #banner-section h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -812,7 +1013,7 @@ p {
 #about-section .about-box .about-post .about-post-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -848,7 +1049,7 @@ p {
 #about-section .about-box .about-post .hover-about h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 13px;
@@ -861,7 +1062,7 @@ p {
 #about-section .about-box .about-post .hover-about h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -981,7 +1182,7 @@ p {
 #about-section2 .about-box .about-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
 }
@@ -1005,7 +1206,7 @@ p {
 #about-section2 .content-tab .tab-cont h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-weight: 900;
@@ -1108,7 +1309,7 @@ p {
 #about-section3 .about-box .about-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -1143,7 +1344,7 @@ p {
 #about-section4 .about-box .about-post .post-content .member-text h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #ffffff;
@@ -1204,7 +1405,7 @@ p {
   display: block;
   color: #f27935;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin-top: -26px;
 }
@@ -1278,7 +1479,7 @@ p {
   color: #999999;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px dotted #999999;
   padding-bottom: 2px;
@@ -1319,7 +1520,7 @@ p {
 .portfolio-box .project-post .hover-box .inner-hover h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1420,7 +1621,7 @@ a.button-one {
   background: transparent;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid #ffffff;
   -webkit-border-radius: 2px;
@@ -1438,7 +1639,7 @@ a.button-two {
   background: transparent;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid #f27935;
   -webkit-border-radius: 2px;
@@ -1481,7 +1682,7 @@ a.button-two:hover {
   color: #999999;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px dotted #999999;
   padding-bottom: 2px;
@@ -1533,7 +1734,7 @@ a.button-two:hover {
 #portfolio-section2 .portfolio-box .project-post .hover-box .inner-hover h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1668,7 +1869,7 @@ a.button-two:hover {
 #portfolio-section3 .portfolio-box .project-post .hover-box .inner-hover h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1782,7 +1983,7 @@ a.button-two:hover {
   text-align: center;
   color: #f27935;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   background: none;
   text-transform: uppercase;
   font-weight: 900;
@@ -1805,7 +2006,7 @@ a.button-two:hover {
 #statistic-section .statistic-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1820,7 +2021,7 @@ a.button-two:hover {
 #statistic-section .statistic-post span.timer {
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0;
 }
@@ -1861,7 +2062,7 @@ a.button-two:hover {
 #clients-section .testimonial-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1871,7 +2072,7 @@ a.button-two:hover {
 #clients-section .testimonial-box span {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -1942,7 +2143,7 @@ a.button-two:hover {
 #clients-section2 .testimonial-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -1953,7 +2154,7 @@ a.button-two:hover {
 #clients-section2 .testimonial-box span {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -2026,7 +2227,7 @@ a.button-two:hover {
 #clients-section3 .testimonial-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -2108,7 +2309,7 @@ a.button-two:hover {
 #statistic-section2 .statistic-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -2122,7 +2323,7 @@ a.button-two:hover {
 #statistic-section2 .statistic-post span.timer {
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0;
 }
@@ -2171,7 +2372,7 @@ a.button-two:hover {
 #statistic-section3 .statistic-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #ffffff;
@@ -2186,7 +2387,7 @@ a.button-two:hover {
 #statistic-section3 .statistic-post span.timer {
   color: #ffffff;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0;
 }
@@ -2214,7 +2415,7 @@ a.button-two:hover {
 #statistic-section4 .statistic-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -2230,7 +2431,7 @@ a.button-two:hover {
 #statistic-section4 .statistic-post span.timer {
   color: #222222;
   font-size: 48px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0;
 }
@@ -2257,7 +2458,7 @@ a.button-two:hover {
 #features-section .feature-title h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #f27935;
@@ -2268,7 +2469,7 @@ a.button-two:hover {
 #features-section .feature-title h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -2323,7 +2524,7 @@ a.button-two:hover {
 #features-section .features-box .feature-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-left: 80px;
@@ -2402,7 +2603,7 @@ a.button-two:hover {
   left: auto;
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2447,7 +2648,7 @@ a.button-two:hover {
 #feature-section .feature-box .feature-post.feature-text-post .inner-feature h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -2474,7 +2675,7 @@ a.button-two:hover {
 #feature-section2 .features-box h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -2495,7 +2696,7 @@ a.button-two:hover {
 #feature-section2 .features-box .feature-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-left: 60px;
@@ -2539,7 +2740,7 @@ a.button-two:hover {
 #tools-section .tools-box .tools-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-left: 60px;
@@ -2586,7 +2787,7 @@ a.button-two:hover {
 #team-section .team-box .team-post .team-member .member-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin: 0;
@@ -2600,7 +2801,7 @@ a.button-two:hover {
 #team-section .team-box .team-post .team-member .member-content span {
   display: inline-block;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -2661,7 +2862,7 @@ a.button-two:hover {
 #team-section2 .team-box .team-post .team-member .member-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin: 0;
@@ -2669,7 +2870,7 @@ a.button-two:hover {
 #team-section2 .team-box .team-post .team-member .member-content span {
   display: inline-block;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -2725,7 +2926,7 @@ a.button-two:hover {
   display: block;
   color: #f27935;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin-top: -26px;
 }
@@ -2856,7 +3057,7 @@ a.button-two:hover {
   display: block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -2874,7 +3075,7 @@ a.button-two:hover {
 #news-section .item.news-post .news-content .news-content-text h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -2936,7 +3137,7 @@ a.button-two:hover {
   display: block;
   color: #999999;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 0px;
@@ -2959,7 +3160,7 @@ a.button-two:hover {
 #news-section2 .news-box .news-post .news-title h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -3074,7 +3275,7 @@ a.button-two:hover {
   display: block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: -6px 0 2px;
   padding-bottom: 2px;
@@ -3095,7 +3296,7 @@ a.button-two:hover {
 }
 #news-section3 .news-box .news-post .post-content .post-content-text h2 {
   color: #222222;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 15px;
@@ -3131,7 +3332,7 @@ a.button-two:hover {
   display: inline-block;
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #ffffff;
@@ -3144,7 +3345,7 @@ a.button-two:hover {
   width: 300px;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   padding: 10px;
   border: none;
   -webkit-border-radius: 0;
@@ -3159,7 +3360,7 @@ a.button-two:hover {
   padding: 8px 35px;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   border: 2px solid #ffffff;
   text-transform: uppercase;
@@ -3215,7 +3416,7 @@ a.button-two:hover {
 #services-section .services-box .services-post .up-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #ffffff;
@@ -3295,7 +3496,7 @@ a.button-two:hover {
 #services-section2 .services-box-line .services-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -3354,7 +3555,7 @@ a.button-two:hover {
 #pricing-section .pricing-box ul.pricing-table li h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin: 0;
@@ -3376,7 +3577,7 @@ a.button-two:hover {
   border-radius: 3px;
   color: #f27935;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3473,7 +3674,7 @@ a.button-two:hover {
 #video-section h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -3503,7 +3704,7 @@ a.button-two:hover {
   font-weight: 900;
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0px;
   border-width: 0px;
   border-style: none;
@@ -3520,7 +3721,7 @@ a.button-two:hover {
   font-size: 48px;
   line-height: 60px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   background-color: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -3553,7 +3754,7 @@ a.button-two:hover {
   background: transparent;
   font-size: 12px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid #ffffff;
   -webkit-border-radius: 2px;
@@ -3572,7 +3773,7 @@ a.button-two:hover {
   background: transparent;
   font-size: 12px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border: 2px solid #333333;
   -webkit-border-radius: 2px;
@@ -3625,7 +3826,7 @@ a.button-two:hover {
 .marketing-box .product .hover-mark h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 18px;
@@ -3644,7 +3845,7 @@ a.button-two:hover {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   letter-spacing: 1.9px;
   margin: 5px 0;
 }
@@ -3661,7 +3862,7 @@ a.button-two:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3732,7 +3933,7 @@ a.button-two:hover {
 #shop-section .title-line h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -3810,7 +4011,7 @@ a.button-two:hover {
 .products-box .product-post h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -3841,7 +4042,7 @@ a.button-two:hover {
   display: inline-block;
   color: #f27935;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
 }
@@ -3860,7 +4061,7 @@ a.button-two:hover {
   padding: 10px 14px;
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -3888,7 +4089,7 @@ a.button-two:hover {
   border: 2px solid #222222;
 }
 .products-box .product-post .product-links a.add-cart-btn span {
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   margin-left: 3px;
@@ -3955,7 +4156,7 @@ a.button-two:hover {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   letter-spacing: 1.7px;
 }
@@ -4019,7 +4220,7 @@ a.button-two:hover {
 .tab-product-box ul.product-list li .product-list-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -4050,7 +4251,7 @@ a.button-two:hover {
   display: inline-block;
   color: #f27935;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   letter-spacing: 1.6px;
   margin: 0;
@@ -4092,7 +4293,7 @@ a.button-two:hover {
   border-radius: 0px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: 1px solid transparent;
@@ -4149,7 +4350,7 @@ a.button-two:hover {
 #contact-section .contact-info .contact-info-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -4168,7 +4369,7 @@ a.button-two:hover {
 #contact-section .contact-form h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-align: center;
@@ -4188,7 +4389,7 @@ a.button-two:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   -o-border-radius: 1px;
@@ -4207,7 +4408,7 @@ a.button-two:hover {
   border: 2px solid #333333;
   color: #333333;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
@@ -4231,7 +4432,7 @@ a.button-two:hover {
 #contact-form .message {
   height: 30px;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
 }
 #contact-form .message.error {
   color: #e74c3c;
@@ -4261,7 +4462,7 @@ a.button-two:hover {
 .page-banner-section h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 18px;
@@ -4292,7 +4493,7 @@ a.button-two:hover {
   -o-transition: all 0.2s ease-in-out;
   color: #cccccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   line-height: 24px;
 }
@@ -4303,7 +4504,7 @@ a.button-two:hover {
   content: '>';
   color: #cccccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   margin-right: 6px;
   line-height: 24px;
@@ -4391,7 +4592,7 @@ ul.filter li a {
   color: #999999;
   font-size: 12px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   border-bottom: 1px dotted #999999;
   padding-bottom: 2px;
@@ -4452,7 +4653,7 @@ ul.filter li a.active {
 .portfolio-section.masonry-style .portfolio-box .project-post .project-tit-cont h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-weight: 900;
@@ -4733,7 +4934,7 @@ ul.filter li a.active {
 .portfolio-section.vertical-style .portfolio-box .project-post .hover-box a {
   color: #ffffff;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -4831,7 +5032,7 @@ ul.filter li a.active {
   display: block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -4862,7 +5063,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #cccccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -4873,7 +5074,7 @@ ul.filter li a.active {
   content: '/';
   color: #cccccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   margin-right: 3px;
@@ -4885,7 +5086,7 @@ ul.filter li a.active {
 .blog-section .blog-box .blog-post .post-content .post-content-text h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 30px;
@@ -4918,7 +5119,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #cccccc;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   margin-bottom: 15px;
@@ -4948,7 +5149,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   padding: 8px 13px;
   -webkit-border-radius: 20px;
@@ -5005,7 +5206,7 @@ ul.filter li a.active {
   display: block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -5226,7 +5427,7 @@ ul.filter li a.active {
   display: block;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -5246,7 +5447,7 @@ ul.filter li a.active {
 .blog-section.alternative .blog-box .blog-post.big-size.img-post .up-box .blog-title h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -5307,7 +5508,7 @@ ul.filter li a.active {
   display: block;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -5356,7 +5557,7 @@ ul.filter li a.active {
 .blog-section.alternative .blog-box .blog-post.big-size.cont-post-l .cont-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-bottom: 30px;
@@ -5411,7 +5612,7 @@ ul.filter li a.active {
   display: block;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -5452,7 +5653,7 @@ ul.filter li a.active {
 .blog-section.alternative .blog-box .blog-post.small-size .cont-box h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-bottom: 30px;
@@ -5531,7 +5732,7 @@ ul.filter li a.active {
   color: #ffffff;
   font-size: 13px;
   font-weight: 900;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   padding: 14px 32px;
   background: #f27935;
@@ -5616,7 +5817,7 @@ ul.filter li a.active {
 .sidebar .widget h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-weight: 900;
@@ -5641,7 +5842,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   padding: 8px 20px;
   background: #ffffff;
@@ -5706,7 +5907,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   padding: 8px;
   background: #ffffff;
   border: 1px solid #f0f0f0;
@@ -5745,7 +5946,7 @@ ul.filter li a.active {
   border-radius: 0px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   border: none;
@@ -5784,14 +5985,14 @@ ul.filter li a.active {
   color: #aaaaaa;
   font-size: 11px;
   line-height: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
 }
 .sidebar .tab-posts-box .tab-pane ul.top-post-list li .top-post-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0 0 15px;
   color: #999999;
   font-size: 12px;
@@ -5818,7 +6019,7 @@ ul.filter li a.active {
 .blog-post.single-post h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -5847,7 +6048,7 @@ ul.filter li a.active {
 .blog-post.single-post .share-box span {
   display: inline-block;
   margin: 4px 0;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   color: #999999;
   text-transform: uppercase;
   font-size: 13px;
@@ -5900,7 +6101,7 @@ ul.filter li a.active {
 .blog-post.single-post .autor-post .autor-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-bottom: 14px;
@@ -5915,7 +6116,7 @@ ul.filter li a.active {
 .blog-post.single-post .comment-section h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -5946,7 +6147,7 @@ ul.filter li a.active {
 .blog-post.single-post .comment-section ul li .comment-box .comment-content h4 {
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
@@ -5969,7 +6170,7 @@ ul.filter li a.active {
 .blog-post.single-post .comment-section ul li .comment-box .comment-content span {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   line-height: 20px;
   margin: 0 0 10px;
   font-size: 11px;
@@ -6004,7 +6205,7 @@ ul.filter li a.active {
   border-radius: 0;
   color: #999999;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   border: 1px solid #f1f1f1;
   outline: none;
   margin: 0 0 20px;
@@ -6027,7 +6228,7 @@ ul.filter li a.active {
   padding: 10px 34px;
   color: #f27935;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   background: transparent;
   text-transform: uppercase;
   font-weight: 700;
@@ -6051,7 +6252,7 @@ ul.filter li a.active {
 .blog-post.single-post .comment-section .comment-form .message {
   height: 30px;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
 }
 .blog-post.single-post .comment-section .comment-form .message.error {
   color: #e74c3c;
@@ -6097,7 +6298,7 @@ ul.filter li a.active {
   display: block;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 2px;
   padding-bottom: 2px;
@@ -6115,7 +6316,7 @@ ul.filter li a.active {
 .blog-section.single2 .blog-post.single-post .post-gal .hover-single .container .title-post h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6139,7 +6340,7 @@ ul.filter li a.active {
   -o-transition: all 0.2s ease-in-out;
   color: #ffffff;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -6150,7 +6351,7 @@ ul.filter li a.active {
   content: '/';
   color: #ffffff;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   margin-right: 3px;
@@ -6180,7 +6381,7 @@ ul.filter li a.active {
 .single-project-section .title-project h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6245,7 +6446,7 @@ ul.filter li a.active {
   display: inline-block;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin: 0;
   font-weight: 900;
 }
@@ -6258,7 +6459,7 @@ ul.filter li a.active {
 .single-project-section .project-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -6287,7 +6488,7 @@ ul.filter li a.active {
   display: inline-block;
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -6382,7 +6583,7 @@ ul.filter li a.active {
   display: inline-block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6394,7 +6595,7 @@ ul.filter li a.active {
 .error-section h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6461,7 +6662,7 @@ ul.filter li a.active {
 .comming-soon-section .comming-soon-content h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6472,7 +6673,7 @@ ul.filter li a.active {
 .comming-soon-section .comming-soon-content h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   color: #ffffff;
@@ -6493,7 +6694,7 @@ ul.filter li a.active {
   border-radius: 0;
   color: #ffffff;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   border: 1px solid #ffffff;
   outline: none;
   margin: 0 10px 20px 0;
@@ -6508,7 +6709,7 @@ ul.filter li a.active {
   padding: 10px 35px;
   color: #f27935;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   background: transparent;
   text-transform: uppercase;
   font-weight: 700;
@@ -6550,7 +6751,7 @@ ul.filter li a.active {
   display: block;
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6585,7 +6786,7 @@ ul.filter li a.active {
   background: #f7f7f7;
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   margin-bottom: 0;
@@ -6627,7 +6828,7 @@ ul.filter li a.active {
 .accord-title p {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -6655,7 +6856,7 @@ ul.filter li a.active {
 .accord-content p {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -6673,7 +6874,7 @@ ul.filter li a.active {
 .typography-section h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -6766,7 +6967,7 @@ blockquote.quote4 p {
   border-radius: 0px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   border: none;
@@ -6789,7 +6990,7 @@ blockquote.quote4 p {
 .tabs-accord-section .tab-posts-box .tab-pane h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -6882,7 +7083,7 @@ blockquote.quote4 p {
 .single-product-section h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
@@ -6912,14 +7113,14 @@ blockquote.quote4 p {
   margin-left: 5px;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
 }
 .single-product-section .product-details span.price {
   display: block;
   color: #222222;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 20px;
@@ -6939,7 +7140,7 @@ blockquote.quote4 p {
   line-height: 35px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   outline: none;
   margin: 0px;
   padding: 0;
@@ -6958,7 +7159,7 @@ blockquote.quote4 p {
   line-height: 34px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   outline: none;
   text-align: center;
   padding: 0;
@@ -6979,7 +7180,7 @@ blockquote.quote4 p {
   background: #f27935;
   border: 1px solid transparent;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
@@ -7000,7 +7201,7 @@ blockquote.quote4 p {
 .single-product-section .product-details .prod-list span {
   display: inline-block;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7024,7 +7225,7 @@ blockquote.quote4 p {
   -o-transition: all 0.2s ease-in-out;
   color: #333;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
 }
 .single-product-section .product-details .prod-list ul li a:hover {
   color: #f27935;
@@ -7061,7 +7262,7 @@ blockquote.quote4 p {
   overflow: hidden;
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -7084,7 +7285,7 @@ blockquote.quote4 p {
 .single-product-section .product-reviews ul li .review-content span.time {
   font-size: 13px;
   color: #999999;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px;
@@ -7109,7 +7310,7 @@ blockquote.quote4 p {
   border-radius: 2px;
   background: #f27935;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.7px;
@@ -7195,7 +7396,7 @@ blockquote.quote4 p {
   border-bottom: 1px solid #e0e0e0;
   color: #999999;
   font-size: 11px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.6px;
@@ -7204,7 +7405,7 @@ blockquote.quote4 p {
   border-bottom: 1px solid #e4e4e4;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.6px;
@@ -7225,7 +7426,7 @@ blockquote.quote4 p {
 .checking-form .table td h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   font-size: 13px;
@@ -7268,7 +7469,7 @@ blockquote.quote4 p {
   line-height: 35px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   outline: none;
   margin: 0px;
   padding: 0;
@@ -7287,7 +7488,7 @@ blockquote.quote4 p {
   line-height: 34px;
   color: #222222;
   font-size: 13px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   outline: none;
   text-align: center;
   padding: 0;
@@ -7315,7 +7516,7 @@ blockquote.quote4 p {
   border-radius: 3px;
   color: #cccccc;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin-bottom: 10px;
   width: 170px;
 }
@@ -7336,7 +7537,7 @@ blockquote.quote4 p {
   -o-transition: all 0.2s ease-in-out;
   padding: 9px 17px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   color: #f27935;
   background: transparent;
   border: 2px solid #f27935;
@@ -7363,7 +7564,7 @@ blockquote.quote4 p {
 .checking-form .total-box .inner-total h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -7415,7 +7616,7 @@ footer .footer-widgets .widgets ul.tag-list li a {
   -o-transition: all 0.2s ease-in-out;
   color: #ffffff;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 400;
   padding: 7px 15px;
   border: 1px solid #ffffff;
@@ -7490,12 +7691,12 @@ footer .footer-widgets .widgets ul.popular-list li span {
   color: #f27935;
   font-size: 11px;
   font-weight: 700;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
 }
 footer h2 {
   color: #222222;
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 700;
   margin: 0 0 15px;
   text-transform: uppercase;
@@ -7506,7 +7707,7 @@ footer h2 {
 footer h1 {
   color: #222222;
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;

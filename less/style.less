@@ -135,14 +135,14 @@ website:    http://www.themepunch.com
     span {
         color: @skin-color;
     }
-    padding: 25px 15px;
+    padding: 18px 15px;
     letter-spacing: 2.5px;
     z-index: 99999;
 }
 
 .navbar-nav {
     
-   
+    .transition;
     > li > a {
         color: @color2 !important;
         font-size: 13px;
@@ -150,11 +150,18 @@ website:    http://www.themepunch.com
         font-weight: 500;
         text-transform: uppercase;
         .transition;
-        padding: 44px 8px;
+        padding: 40px 8px 30px;
+        height: 0px;
     }
-    > li > a:hover,
+    > li > a > span {
+        color: @color2 ;
+    }
+    
     > li > a.active {
-        color: @color1 !important;
+        color: @color2 !important;
+    }
+    > li > a:hover {
+        color: @red !important;
     }
 
     a.open-search {
@@ -169,6 +176,7 @@ website:    http://www.themepunch.com
             display: inline-block;
         }
     }
+
     li.shopping-cart {
         position: relative;
         > a {
@@ -303,11 +311,13 @@ website:    http://www.themepunch.com
 header.active {
     .navbar-brand {
         color: @color1 !important;
-        padding: 25px 15px;
+        padding: 10px 15px;
     }
     .navbar-nav {
         > li > a {
             color: @color2 !important;
+            transition: all 0.2s ease;
+            height: 0px;
         }
         a.open-search {
             padding: 8px 15px 25px;
@@ -315,9 +325,21 @@ header.active {
                 color: @color2;
             }
         }
-        > li > a:hover,
+        
         > li > a.active {
-            color: @skin-color !important;
+            background-color: @red;
+            color: @white !important;
+            height: 60px;
+        }
+        > li > a:hover {
+            color: @red !important;
+        }
+        > li > a:hover > span,
+        > li > a.active > span {
+            color: @white !important;
+        }
+        > li > a.active {
+            color: @white !important;
         }
         li.shopping-cart {
             position: relative;
@@ -335,6 +357,9 @@ header.active {
                 }
             }
         }
+    }
+    ul.dropdown {
+        top: 80%;
     }
 }
 
@@ -433,7 +458,7 @@ ul.drop-down {
     .ul-reset;
     position: absolute;
     width: 220px;
-    top: 100%;
+    top: 163%;
     left: 0;
     visibility: hidden;
     padding: 0;
@@ -459,6 +484,10 @@ ul.drop-down {
             color: @skin-color;
             background: #f8f8f8;
         }
+    }
+    &.active {
+        position: absolute;
+       top: 140% !important; 
     }
 }
 
@@ -533,9 +562,9 @@ p {
 .title-section {
     margin-bottom: 65px;
     text-align: center;
+    z-index: 1;
     h1 {
         .heading1;
-        letter-spacing: 2px;
         span {
             color: @skin-color;
         }
@@ -568,7 +597,14 @@ p {
         background: url('../images/pin.png') center center no-repeat;
     }
 }
-
+.title-section.gray {
+    h1 {
+        color: #b9b9b9;
+    }
+    > span:before {
+        background: url('../images/pin.png') center center no-repeat;
+    }
+}
 #home-section {
     .tp-caption.small_text {
         position:absolute;
@@ -667,7 +703,7 @@ p {
 /*-------------------------------------------------*/
 
 #banner-section {
-    padding: 50px 0;
+    padding: 25px 0;
     background: @skin-color;
     text-align: center;
     h2 {
@@ -687,6 +723,7 @@ p {
         border: 2px solid @white;
         color: @skin-color;
     }
+
 }
 
 #about-section {

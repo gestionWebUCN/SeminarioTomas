@@ -697,6 +697,42 @@ $(document).ready(function($) {
 		
 	})();
 
+	(function() {
+
+		var docElem = document.documentElement,
+			didScroll = false,
+			changeHeaderOn = 50;
+			document.querySelector( '.drop-down' );
+		function init() {
+			window.addEventListener( 'scroll', function() {
+				if( !didScroll ) {
+					didScroll = true;
+					setTimeout( scrollPage, 100 );
+				}
+			}, false );
+		}
+		
+		function scrollPage() {
+			var sy = scrollY();
+			if ( sy >= changeHeaderOn ) {
+				$( '.drop-down' ).addClass('active');
+			}
+			else {
+				$( '.drop-down' ).removeClass('active');
+			}
+			didScroll = false;
+		}
+		
+		function scrollY() {
+			return window.pageYOffset || docElem.scrollTop;
+		}
+		
+		init();
+		
+	})();
+
+
+
 });
 
 /* ---------------------------------------------------------------------- */

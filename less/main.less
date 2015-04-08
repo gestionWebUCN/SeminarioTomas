@@ -1,10 +1,4 @@
-@red: #d13d30;
-@green: #66A590;
-@yellow: #f2ca0d;
-@gray: #31363c;
-@white: #fff;
-@black: #333;
-@text: #666;
+@import "variables";
 
 /*+====================================================+
     GENERAL
@@ -12,6 +6,41 @@
 body {
     background-color: #fff;
     text-rendering: optimizelegibility;
+}
+.link {
+    border: 1px solid @white;
+    text-align: center;
+    color: @white;
+    padding: 10px 40px;
+    height: 40px;
+    display: table;
+    &:hover {
+        background-color: @red;
+        border-color: @red;
+        color:@white;    
+    }
+}
+
+/*+====================================================+
+    PARALLAX
++====================================================+*/
+.parallax-bg {
+    background: rgb(49, 54, 60);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.8;
+
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)'; /* Safari 1.x */
+    -khtml-opacity: 0.8; /* Modern browsers */
+
+
 }
 /*+====================================================+
     ICONS
@@ -39,96 +68,253 @@ body {
     }
 }
 /*+====================================================+
-    HEADER - NAV
+    HOME
 +====================================================+*/
-header {
-    position: fixed;
-    top:0px;
-    right: 0px;
-    left: 0px;
-    z-index: 1030;
-    background-color: @white; 
-    .header-top {
-        background-color: @gray;
-        height: 30px;
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        top: 0;
-        display: block;
-        .header-top-left {
-            ul.social-top {
-                list-style: outside none none;
-                padding-left: 0px;
-                li {
-                    display: inline-block;
-                    border-right: 1px solid #42474c;  
-                    opacity: 1;
-                    top:0;
-                    height: 30px;
-                    transition: all 0.6s ease;
-                    &.border-blanco {
-                        border-right: 1px solid #31363c;
-                        opacity: 0;  
-                        top: -30px;
-                        height: 0;
-                    }
-                    a {
-                        padding: 5px 12px;
-                        display: block;
-                        font-size: 14px;
-                        color: #c0c0c0;
-                        &:hover {
-                            color: @red;
-                        }
-                    }
-                }
-            }
-        }
-        .header-top-right {
-            float: right;
-
-            ul.search-top {
-                list-style: outside none none;
-                padding-left: 0px;
-                position: relative;
-                li {
-                    display: inline-block;
-                    transition: all 0.6s ease;
-                    opacity: 1;
-                    position: relative;
-                    top:0;
-                     &.search-up {
-                        opacity: 0; 
-                        top: -30px;
-                    }
-                    a {
-                        background-color: @red;
-                        padding: 5px 12px;
-                        display: block;
-                        font-size: 14px;
-                        color: #fff;
-                        &:hover {
-                            color: @red;
-                            background-color: @white;
-                            text-decoration: none !important;
-                        }
-                    }
-                }
-            }
-        }
-        .header-top-left, .header-top-right {
-            display: inline-block;
-        }
-    }
-
-    .header-up {
-        top: -30px;
-        height: 0;
-
-    }
-    .navbar-up {
+    /*+====================================================+
+        HEADER - NAV
+    +====================================================+*/
+    header {
+        position: fixed;
         top:0px;
+        right: 0px;
+        left: 0px;
+        z-index: 1030;
+        background-color: @white; 
+        .header-top {
+            background-color: @gray;
+            height: 30px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            top: 0;
+            display: block;
+            .header-top-left {
+                ul.social-top {
+                    list-style: outside none none;
+                    padding-left: 0px;
+                    li {
+                        display: inline-block;
+                        border-right: 1px solid #42474c;  
+                        opacity: 1;
+                        top:0;
+                        height: 30px;
+                        transition: all 0.6s ease;
+                        &.border-blanco {
+                            border-right: 1px solid #31363c;
+                            opacity: 0;  
+                            top: -30px;
+                            height: 0;
+                        }
+                        a {
+                            padding: 5px 12px;
+                            display: block;
+                            font-size: 14px;
+                            color: #c0c0c0;
+                            &:hover {
+                                color: @red;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-top-right {
+                float: right;
+
+                ul.search-top {
+                    list-style: outside none none;
+                    padding-left: 0px;
+                    position: relative;
+                    li {
+                        display: inline-block;
+                        transition: all 0.6s ease;
+                        opacity: 1;
+                        position: relative;
+                        top:0;
+                         &.search-up {
+                            opacity: 0; 
+                            top: -30px;
+                        }
+                        a {
+                            background-color: @red;
+                            padding: 5px 12px;
+                            display: block;
+                            font-size: 14px;
+                            color: #fff;
+                            &:hover {
+                                color: @red;
+                                background-color: @white;
+                                text-decoration: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-top-left, .header-top-right {
+                display: inline-block;
+            }
+        }
+
+        .header-up {
+            top: -30px;
+            height: 0;
+
+        }
+        .navbar-up {
+            top:0px;
+        }
     }
+    /*+====================================================+
+        NAVBAR AUDIO
+    +====================================================+*/
+    #auido-section {
+        padding: 12px 0;
+        background: @skin-color;
+        text-align: center;
+        font-family: @font;
+        color: @white;
+        .wrap-audio {
+            text-align: left;
+            line-height: 2.5;
+            .tema {
+                color: @yellow;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .calender {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .wrap-brand {
+            ul {
+                margin-top: 5px;
+                margin-bottom: 0;
+                li {
+                    a {
+                        border: 1.5px solid @white;
+                        color: @white;
+                        border-radius: 100%;
+                        width: 42px;
+                        height:42px;
+                        display: block;
+                        &:hover {
+                            background-color: @yellow;
+                            border: none;
+                        }
+                        .icon, .fa {
+                            font-size: 18px;
+                            line-height: 2.5;
+
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+    /*+====================================================+
+        SERVICIOS - HOME
+    +====================================================+*/
+    #servicios-section {
+        .servicios-box {
+            .img-circle {
+                border-radius: 100%;
+                width: 140px;
+                height: 140px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .servicios-post-content {
+                text-align: center;
+                h5 {
+                    font-size: 20px;
+                    letter-spacing: -1px;
+                    font-weight: 600;
+                    color: @color1;
+                }
+            }
+        }
+    }
+    /*+====================================================+
+        ACTIVIDADES - HOME
+    +====================================================+*/
+     #actividades-section {
+        padding: 60px 0;
+        position: relative;
+        background: url('/images/parallax/banner1.jpg') fixed;
+        .back-cover;
+        .calender {
+            background-color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 10px 15px;
+            width:100px;
+            z-index: 2;
+            &:after {
+                content: '';
+                background-color: #e4e4e4;
+                position:absolute;
+                top: 23px;
+                left: 18px;
+                width:94px;
+                height:100px;
+                z-index: -1;
+            }
+            .dia {
+                font-size: 60px;
+                font-weight: 700;
+                color: @color1;
+            }
+        }
+        .title {
+            h4 {
+                font-weight: 300;
+                color: @white;
+                font-size: 16px;
+            }
+            .times {
+                color: #b9b9b9;
+                font-size: 12px;
+                .horas {
+                    display: block;
+                }
+            }
+        }
+        a {
+
+        }
+     }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
